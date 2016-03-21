@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+<extension
+         point="org.eclipse.ui.newWizards">
+      <wizard
+            category="org.eclipse.ui.Examples/de.uni_paderborn.fujaba.muml.example"
+            class="de.uni_paderborn.fujaba.muml.example.ui.wizard.ExampleCreationWizard"
+            icon="images/muml.png"
+            id="de.uni_paderborn.fujaba.muml.example.ui.RailCabCreationWizard"
+            name="%muml.example.railcab.name"
+            projectName="%muml.example.railcab.projectName"
+            projectPageDescription="%muml.example.railcab.projectPage.desc"
+            projectPageTitle="%muml.example.railcab.projectPage.title">
+             <source
+             	bundle = "%bundle@de.uni_paderborn.fujaba.muml.example.railcab"
+            	path = "%folder@de.uni_paderborn.fujaba.muml.example.railcab"
+            	/>
+             <description>
+                %muml.example.railcab.desc
+             </description>
+      </wizard>
+   </extension>
+</plugin>
